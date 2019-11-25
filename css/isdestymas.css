@@ -1,7 +1,39 @@
-header{background-color: aquamarine}
+header{
+    background-color: aquamarine;
+    grid-area: h;
+    }
+
 aside{
     background-color: blue;
     width: 250px;
-    height: 100px;}
-main{background-color: darkcyan}
-footer{background-color: coral}
+    /*height: 100px;*/
+    grid-area: a;
+}
+
+main{
+    background-color: darkcyan;
+    grid-area: m;
+}
+
+footer{
+    background-color: coral;
+    grid-area: f;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        'm m'
+        'a h'
+        'f h';
+    grid-template-columns: 250px auto;
+}
+
+@media screen and (max-width: 992px){
+    #grid  {
+        grid-template-areas:
+                'h h'
+                'a m'
+                'f f';
+    }
+}

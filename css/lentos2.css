@@ -1,0 +1,15 @@
+div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    float: left;
+}
+div:nth-of-type(5n+0){float: none;}
+
+.j{background-color: black;}
+.m{background-color: blue;}
+.z{background-color: green;}
+.r{background-color: red;}

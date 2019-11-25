@@ -1,0 +1,35 @@
+.j{background-color: black;}
+.m{background-color: blue;}
+.z{background-color: green;}
+.r{background-color: red;}
+.pirma div {
+    float: left;
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+  }
+div {}
+.antra div {
+    float: left;
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+}
+.trecia div {
+    float: left;
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+}
+.ketvirta div {
+    float: left;
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+}
+.penkta div {
+    float: left;
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+}
