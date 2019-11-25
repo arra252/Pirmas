@@ -6,20 +6,37 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<form action="kurSiusimeDuomenis.php" method="POST" target="_blank">
 
-    <input type="text" name="fname" placeholder="Jusu vardas"><br>
-    <input type="text" name="lname" placeholder="Jusu el. pasto adresas"><br>
-    <input type="text" name="msgteme" placeholder="Zinutes tema"><br>
-    <textarea name="msg" rows="4" cols="50">Žinute</textarea><br>
-    <textarea name="msg" placeholder="Žinute" rows="4" cols="50"></textarea><br>
-    <input type="submit" value="Siusti zinute"><br>
+    <header></header>
+    <aside></aside>
+    <main>
 
-    <label for="fn">Vardas</label>
-    <input name="firstname" type="text" id="fn" /><br>
-    <label for="sn">Vardas</label>
-    &nbsp;<input name="firstname" type="text" id="sn" /><br>
+        <form action="kurSiusimeDuomenis.php" method="POST" target="_blank">
 
-</form>
+            <input type="text" name="fname" placeholder="Jūsų vardas"><br>
+            <input type="text" name="lname" placeholder="Jūsų el. pašto adresas"><br>
+            <input type="text" name="msgteme" placeholder="Žinutes tema"><br>
+            <textarea name="msg" rows="4" cols="50">Žinute</textarea><br>
+            <textarea name="msg" placeholder="Žinute" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Siųsti žinute">
+        </form>
+        <br><br>
+        <form action="kurSiusimeDuomenis.php">
+            <label for="name">Jūsų vardas</label>
+            &nbsp;<input type="text" name="vardas" id="name"/><br>
+            <br>
+            <label for="emailas">Jūsų el. pašto adresas</label>
+            <input type="email" name="el-pastas" id="emailas" />
+            <br>
+            <label for="apie_ka">Žinutės tema</label>
+            <input type="text" name="tema" id="apie_ka">
+            <br>
+            <label for="msg">Jūsų žinutė mums:</label>
+            <textarea name="zinute" id="msg" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Siųsti">
+        </form>
+    </main>
+    <footer>Arra Visos teisės saugomos &copy;2019</footer>
 </body>
 </html>
