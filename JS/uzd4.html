@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/uzd4.css">
+</head>
+
+<body>
+<div class="tabai">
+    <a href="#home" onclick="pakeitiTaba('home')">HOME</a>
+    <a href="#archive" onclick="pakeitiTaba('archive')">ARCHIVE</a>
+    <a href="#settings" onclick="pakeitiTaba('settings')">SETTINGS</a>
+    <a href="#other" onclick="pakeitiTaba('other')">OTHER</a>
+    <a href="#kita" onclick="pakeitiTaba('kita')">KITA</a>
+</div>
+<div class="sheets">
+    <div id="home" class="sheet">HOME DATA</div>
+    <div id="archive" class="sheet">ARCHIVE DATA</div>
+    <div id="settings" class="sheet">SETTINGS DATA</div>
+    <div id="other" class="sheet">OTHER DATA</div>
+    <div id="kita" class="sheet">KITA DATA</div>
+</div>
+<!--let sheets = document.getElementsByClassName('sheet');-->
+<!--function pakeitiTaba(taboId) {-->
+<!--for (i = 0; sheets.length > i; i++) {-->
+<!--sheets[i].style.display = 'none';-->
+<!--}-->
+<!--document.getElementById(taboId).style.display-->
+<!--= "block";-->
+
+<script src="uzd4.js"></script>
+</body>
+</html>

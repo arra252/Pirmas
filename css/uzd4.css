@@ -1,0 +1,9 @@
+tabai>div {
+    float: left;
+}
+.sheet {
+    display: none;
+}
+#home{
+    display: block;
+}
