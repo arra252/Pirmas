@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+    function myFunction() {
+        let n1 = 5;
+        let n2 = 4;
+        let s1 = kampai(n1);
+        let s2 = kampai(n2);
+
+        function kampai(n){
+            let s= (n-2) *180;
+            return s;
+        }
+     document.getElementById('demo1').innerHTML = s1;
+     document.getElementById('demo2').innerHTML = s2;
+    }
+</script>
+
+</body>
+</html>

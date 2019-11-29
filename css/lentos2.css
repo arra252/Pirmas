@@ -4,12 +4,14 @@ div{
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 1px solid black;
+    border: 2px solid greenyellow;
     float: left;
 }
-div:nth-of-type(5n+0){float: none;}
 
-.j{background-color: black;}
+div:nth-of-type(5n+0){
+    float: none;
+}
+.j {background-color: black;}
 .m{background-color: blue;}
 .z{background-color: green;}
 .r{background-color: red;}

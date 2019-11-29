@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+    let bd = '1965-03-25';
+    let year = parseInt(bd.substr(3, 1));
+    // let year = 1965;
+    let month = parseInt(bd.substr(6, 1));
+    // let month = 3;
+    let day = parseInt(bd.substr(9, 1));
+    // let day = 25;
+    let sum = year + month + day;
+    // let sum = year % 1000 % 100 % 10 + month % 10 + day % 10;
+    document.getElementById('demo').innerHTML = sum;
+        }
+</script>
+
+</body>
+</html>
