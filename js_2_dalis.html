@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS antra dalis</title>
+</head>
+<body>
+<p id="demo">Studentas</p>
+<br>
+<button onclick="myFunction()">Studentas</button>
+<br>
+
+<script>
+    function myFunction() {
+        let vardas = "Tomas";
+        let pavarde = "Tomauskas";
+        let kursas = "4";
+        let mokosi = "KTU";
+        let pazymiai = [7, 4, 5];
+
+        document.getElementById("demo").innerHTML = (vardas + ' ' + pavarde + ' ' + 'mokosi ' + mokosi + ' ' + kursas +
+            ' kurse, jo pažymiai: ' + pazymiai);
+    }
+</script>
+
+</body>
+</html>

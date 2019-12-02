@@ -11,11 +11,12 @@
 
 <header>
     <ul>
-        <li><a href="/">Apie mane</a></li>
-        <li><a href="kontaktai.html">Kontaktai</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="/">Apie ku ku mane</a></li>
+        <li><a href="kontaktai.html">Kontaktai ku ku</a></li>
+        <li><a href="portfolio.html">Portfolio ku ku</a></li>
     </ul>
 </header>
+<aside>
     <br>
     <br>
     <br>
@@ -25,7 +26,8 @@
     <br>
     <a href="http://delfi.lt">Cia bus DELFIS</a>
 
-<aside>pakrastys</aside>
+    pakrastys
+</aside>
 <main>
     <h1>
         Arra
@@ -39,18 +41,39 @@
         atque dolorum fugiat illum laborum?
 
 
-        Lorem  ipsum    dolor.
+        Lorem ipsum dolor.
     </h1>
+    <br>
+    <button onclick="loadJSON(load)">Try it</button>
+    <br>
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+    <div id="elementas">Atstatyti</div>
+    <br>
     <picture>
         <source media="(min-width: 600px)" srcset="img/1_wdvsd.png">
     </picture>
-    <img src="/img/web2.jpg" alt="Kitas pav">
+    <img src="img/web2.jpg" alt="Kitas pav">
     <img src="img/web3.png" alt="Img 2">
 </main>
+
+
 <footer>Arra Visos teisės saugomos &copy;2019</footer>
 
 <!-- ku -->
 
+<script src="JS/loader.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("p").click(function(){
+            $(this).hide();
+        });
+        $("#elementas").click(function(){$("p").show();});
+    });
+
+</script>
 </body>
 </html>
 

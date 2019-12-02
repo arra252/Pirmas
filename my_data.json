@@ -1,0 +1,14 @@
+[
+  {
+    "pavadinimas": "Apie",
+    "adresas": "/"
+  },
+  {
+    "pavadinimas": "Portfolio",
+    "adresas": "portfolio.html"
+  },
+  {
+    "pavadinimas": "Kontaktai",
+    "adresas": "kontaktai.html"
+  }
+]
