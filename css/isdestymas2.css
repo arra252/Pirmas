@@ -9,6 +9,9 @@
         color: greenyellow;
     }
 }
+header {
+    grid-area: h;
+}
 
 header ul {
     background-color: aquamarine;
@@ -24,8 +27,6 @@ header ul li {
     padding-right: 10px;
     border: 3px solid red;
     font-size: 30px;
-    /*text-decoration: none;*/
-
 }
 
 header ul li a {
@@ -40,20 +41,28 @@ header ul li:hover a {
 aside {
     background-color: lightpink;
     width: 150px;
-    height: 300px;
+    height: auto;
+    grid-area: a;
 }
 
 main {
     background-color: darkcyan;
-    /*display: inline;*/
-    /*float: right;*/
+    grid-area: m;
 }
 
 footer {
     background-color: coral;
+    grid-area: f;
 }
 
 img {
     width: 250px;
     height: 200px;
+}
+
+#grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'h h ' 'a m ' 'f f ';
+    grid-template-columns: 150px auto;
 }

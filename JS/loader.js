@@ -31,4 +31,14 @@ function loadJSON(callback) {
     xobj.send(null);
 }
 
-// loadJSON(load);
+loadJSON(load);
+
+$(function () {
+    $('header ul li a').click(function (e) {
+        e.preventDefault();
+
+        let elementas = $(this);
+        let adresas = elementas.attr('href');
+        $('main').load(adresas);
+    });
+});
